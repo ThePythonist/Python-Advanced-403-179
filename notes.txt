@@ -1,0 +1,11 @@
+pip install konid : 
+
+faker
+jdatetime
+persiantools
+
+document hashon ro ham bekhonid
+az site pypi.org
+
+
+
