@@ -1,11 +1,11 @@
-pip install konid : 
-
+------ S2 ------
+pip install konid :
 faker
 jdatetime
 persiantools
-
 document hashon ro ham bekhonid
 az site pypi.org
 
-
-
+------ S3 ------
+search :
+args & kwargs in python
