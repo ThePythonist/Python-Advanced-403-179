@@ -14,3 +14,7 @@ args & kwargs in python
 search :
 python important built-in decorators
 recursive functions
+
+------ S6 ------
+choose a project and design ERD for it
+search : magic methods
