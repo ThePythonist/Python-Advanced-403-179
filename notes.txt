@@ -18,3 +18,12 @@ recursive functions
 ------ S6 ------
 choose a project and design ERD for it
 search : magic methods
+
+------ S7 ------
+choose a project and design ERD for it
+search : magic methods
+search : databases - sql
+ORM
+
+------ S8 ------
+search : osol shey gerayi
