@@ -1,14 +1,14 @@
-class Dog():
+class Dog:
     def sound(self):
         return "Woof!"
 
 
-class Cat():
+class Cat:
     def sound(self):
         return "Meow!"
 
 
-class Cow():
+class Cow:
     def sound(self):
         return "Moo!"
 
@@ -19,22 +19,26 @@ def make_sound(animal):
 
 
 # Create instances of different animal classes
-dog = Dog()
-cat = Cat()
-cow = Cow()
-
-# Call the make_sound function with different animal objects
-make_sound(dog)  # Output: Woof!
-make_sound(cat)  # Output: Meow!
-make_sound(cow)  # Output: Moo!
+# woody = Dog()
+# jimmy = Cat()
+# taylor = Cow()
+#
+# # Call the make_sound function with different animal objects
+# make_sound(taylor)
 
 # # -----------------------------------------------------------------------
 #
 # Polymorphism in built-in objects
 
-t = (10, 20, 30, 40)
-l = [50, 60]
+t = (10, 20, 30, 40, 10, 10)
+l = [50, 60, 10, 10]
 
 # Call the __len__() method on each instance
+# Magic methods are special methods and they are automatically called when object is created
 print(l.__len__())
 print(t.__len__())
+
+# print(dir(t))
+# print(dir(l))
+# print(t.count(10))
+# print(l.count(10))

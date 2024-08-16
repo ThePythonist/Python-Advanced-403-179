@@ -27,3 +27,8 @@ ORM
 
 ------ S8 ------
 search : osol shey gerayi
+
+
+------ S10  ------
+search : database , sql(commands), database types(sql-nosql)
+install : db browser for sqlite

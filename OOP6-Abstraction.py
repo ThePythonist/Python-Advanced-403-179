@@ -33,6 +33,7 @@ class Circle(Shape):
     def perimeter(self):
         return 2 * 3.14 * self.radius
 
+
 # Creating instances of the shapes
 
 rectangle = Rectangle(5, 10)
@@ -43,7 +44,6 @@ print("Rectangle Area:", rectangle.area())  # Output: 50
 print("Rectangle Perimeter:", rectangle.perimeter())  # Output: 30
 print("Circle Area:", circle.area())  # Output: 153.86
 print("Circle Perimeter:", circle.perimeter())  # Output: 43.96
-
 
 # ----------------------------------------------------------------------------------
 

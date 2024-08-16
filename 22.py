@@ -16,18 +16,19 @@ class Admin(User):
         self.actions.append("reject_request")
 
     def remove_comment(self, id):
-        pass
+        comments.pop(id)
+        self.actions.append(f"removed comment {id}")
 
 
-# Example usage:
-# admin = Admin("john", "password", "john@example.com", "09126256040", "editor", 5)
-# print(admin.username)  # Output: john
-# print(admin.role)  # Output: admin
-# print(admin.experience)  # Output: 5
-# admin.leave_comment("Hello!")  # Output: Hello!
-# admin.login("john", "password")  # Output: Successfully logged in
-# admin.approve_request()  # Output: Request approved
-# admin.reject_request()  # Output: Request rejected
-# admin.add_report("Report 1")
-# admin.add_report("Report 2")
-# admin.view_reports()  # Output: Reports
+armin = User("armin021", "123", "armin@gmail.com", "09126604030")
+mamad = User("mamad_khafan", "123", "mamad@gmail.com", "091337204001")
+aghareza = Admin("khodereza", "123", "reza@gmail.com", "0912372042244", "manager")
+
+armin.leave_comment("01", "awesome!")
+mamad.leave_comment("02", "dadashami 💋")
+
+print(comments)
+
+aghareza.remove_comment("02")
+
+print(comments)

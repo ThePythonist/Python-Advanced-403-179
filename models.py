@@ -1,6 +1,4 @@
-from random import randint
-
-comments = []
+comments = {}
 
 
 class User:
@@ -16,8 +14,8 @@ class User:
         self.email = email
         self.phonenumber = phonenumber
 
-    def leave_comment(self, text):
-        comments.append({"01": {self.username: text}})
+    def leave_comment(self, id,text):
+        comments.update({id: {self.username: text}})
 
     def login(self, username, password):
         if username == self.username and password == self.password:
