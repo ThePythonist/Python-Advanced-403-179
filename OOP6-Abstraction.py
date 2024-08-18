@@ -40,8 +40,10 @@ rectangle = Rectangle(5, 10)
 circle = Circle(7)
 
 # Using the abstraction to calculate area and perimeter
+
 print("Rectangle Area:", rectangle.area())  # Output: 50
 print("Rectangle Perimeter:", rectangle.perimeter())  # Output: 30
+
 print("Circle Area:", circle.area())  # Output: 153.86
 print("Circle Perimeter:", circle.perimeter())  # Output: 43.96
 
@@ -84,5 +86,6 @@ print("Circle Perimeter:", circle.perimeter())  # Output: 43.96
 # # Calling the start() and stop() methods on the objects
 # print(car.start())  # Output: Toyota Camry started.
 # print(car.stop())  # Output: Toyota Camry stopped.
+#
 # print(motorcycle.start())  # Output: Honda CBR started.
 # print(motorcycle.stop())  # Output: Honda CBR stopped.

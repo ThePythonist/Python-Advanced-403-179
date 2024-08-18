@@ -29,6 +29,12 @@ ORM
 search : osol shey gerayi
 
 
------- S10  ------
+------ S10 ------
 search : database , sql(commands), database types(sql-nosql)
 install : db browser for sqlite
+
+
+
+------ S11 ------
+search : primary key , foregin key
+sql(commands) : create table, insert into, select from, update, alter table, delete from,
