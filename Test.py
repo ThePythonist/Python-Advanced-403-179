@@ -1,47 +1,24 @@
-import sys
-print('This is an error message', file=sys.stderr)
+import sqlite3
 
-# class A:
-#     def sayhello(self):
-#         print("Hello")
-#
-#
-# class B(A):
-#     def saygoodbye(self):
-#         print("Goodbye")
-#
-#
-# valed = A()
-# farzand = B()
+con = sqlite3.connect("info.db")
+cur = con.cursor()
 
-# ------------------------------------------------------------------------------------------
+cur.execute("""
+CREATE TABLE IF NOT EXISTS employees(
+id INT PRIMARY KEY,
+name VARCHAR(50),
+code INT,
+job VARCHAR(70)
+);
+""")
 
-# class Father:
-#     def __init__(self, fname, eyecolor, city, job):
-#         self.familyname = fname
-#         self.eyecolor = eyecolor
-#         self.city = city
-#         self.job = job
+# cur.execute("INSERT INTO employees(name,code,job) VALUES ('james',111,'guitar player');")
+# cur.execute("INSERT INTO employees(name,code,job) VALUES ('lars',112,'drummer');")
 #
-#     def sayhello(self):
-#         print("Hello")
-#
-#
-# class Child(Father):
-#     def __init__(self, fname, eyecolor, city, job, studentid, fieldofstudy):
-#         # --- Inherited ---
-#         super().__init__(fname, eyecolor, city, job)
-#
-#         # --- Not Inherited ---
-#         self.studentid = studentid
-#         self.fieldofstudy = fieldofstudy
-#
-#     def saygoodbye(self):
-#         print("Goodbye")
-#
-#
-# ahmad = Father("mohammadi", "black", "arak", "teacher")
-# ali = Child("mohammad", "brown", "tehran", "engineer", "11001", "computer engineering")
-#
-# print(ali.fieldofstudy)
-# ------------------------------------------------------------------------------------------
+# cur.execute("SELECT * FROM employees;")
+# records = cur.fetchall()
+# for i in records:
+#     print(i)
+
+con.commit()
+con.close()
