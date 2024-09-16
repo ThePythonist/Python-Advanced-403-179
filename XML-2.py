@@ -11,4 +11,4 @@ root = data_dict['flights']
 flights = root['flight']
 
 for i in flights:
-    print(i["passengers"])
+    print(i)
