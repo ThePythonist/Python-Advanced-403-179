@@ -37,6 +37,6 @@ data2 = [
     ['Emily', '28', 'Tokyo']
 ]
 
-# write("data.csv", data2)
-add("data.csv", data2)
-read("data.csv")
+write("data.csv", data1)
+# add("data.csv", data2)
+# read("data.csv")

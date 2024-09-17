@@ -43,3 +43,7 @@ sql(commands) : create table, insert into, select from, update, alter table, del
 ------ S12 ------
 search : ORM
 1 nemone az tabdil json be python va python be json
+
+
+------ S20 ------
+search : model haye tosee narmafzar, agile, scrum
