@@ -47,3 +47,11 @@ search : ORM
 
 ------ S20 ------
 search : model haye tosee narmafzar, agile, scrum
+
+
+------ S23 ------
+Tk.StringVar
+tkinter.messagebox.showinfo
+ttk.Frame
+ttk.Entry
+ttk.Entry.focus
